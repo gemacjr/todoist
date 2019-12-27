@@ -12,7 +12,7 @@ import { collatedTasksExist } from '../helpers';
 
 export const useTasks = selectedProject => {
     const [tasks, setTasks] = useState([]);
-    const [ archivedTasks, setArchivedTasks] = ussearch import moment from 'moment';
+    const [ archivedTasks, setArchivedTasks] = useState([])
 
     useEffect(() => {
 
@@ -81,4 +81,6 @@ export const useProjects = () => {
         })
 
     }, [projects]);
+
+    return { projects, setProjects };
 };
